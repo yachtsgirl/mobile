@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.camera h2{font-size: 24px; text-align: center; padding: 15px 0; letter-spacing: 4px; font-weight: bold; background:#555; color:#fff}
+
+.sub_nav{width: 100%; overflow:hidden; background-color: #eee;}
+.sub_nav li{float: left; width:25%; border-right:1px solid #ccc; height:30px;box-sizing: border-box;}
+.sub_nav li:last-child{border:none;}
+.sub_nav li a{display:block;text-align:center; font-size: 16px; line-height:30px;}
+.sub_nav li.on a{font-weight:bold; background:#fff; border-top:1px solid #eee; box-sizing: border-box;}
+
+.list li{border-bottom:1px dashed #eee;}
+.list li a{display:block;}
+.list li dl{overflow:hidden;}
+.list li dl dt{float:left; width:40%;border:1px solid #ddd; margin:2%;overflow:hidden;}
+.list li dl dt img{width:100%;}
+.list li dl dd{float:left;width:55%;}
+.list li dl dd p{padding:10% 0%;}

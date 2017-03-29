@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* 모바일 코딩 필수 공통영역 */
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; }
+body {
+ color:#666;
+ font-size:14px;
+ font-family: Helvetica, 돋움, Dotum; }
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ background:url(none);
+ -webkit-border-radius:1px;
+ -webkit-apprearance:none; }
+textarea { resize:none; }
+label { cursor:pointer; }
+
+.wrap{width:100%; height:100%; overflow:hidden; background:#fff; position: relative;}
+
+.menu_nav{position: absolute; background: #333; right:-70%; top:0; width: 70%; height:100%; z-index: 10000;}
+@keyframes navmoveIn{
+  0%{right:-70%}
+  100%{right:0;}
+}
+@keyframes navmoveOut{
+  0%{right:0%}
+  100%{right:-70%;}
+}
+.dim.on{position: absolute; left: 0; top: 0; width:100%; height:100%; background-color: rgba(0,0,0,.6); z-index: 10000;}
+
+.menu_nav > ul{clear:both; border-bottom:1px solid #fff;}
+.menu_nav > ul > li{width: 100%;border-top: 1px solid #fff;}
+.menu_nav > ul > li > a {display: block;height: 50px; line-height:50px;  padding: 0 20px; background: url(../img/more_w.png) no-repeat;    background-position: 191px 17px; color: #fff; font-size:18px; font-weight: normal;}
+.menu_nav > ul > li:last-child a{background: none;}
+.menu_nav ul li ul{display: none;}
+.menu_nav li ul li{border-top: 1px dotted #fff;}
+.menu_nav li ul li a{display: block; height: 50px; line-height: 50px;padding-left: 40px; color: #fff;}
+
+.header{width: 100%; height: 60px;}
+.header h1{float: left; margin: 19px 15px 12px;}
+.header h1 a{display: block; width: 109px; height: 29px; background: url(../img/logo_2x.png) no-repeat; text-indent: -9999px; background-size:109px 29px;}
+a.menu_box{display: block; float: right; background: url(../img/menu_2x.png) no-repeat; text-indent: -9999px; width: 36px; height: 29px; margin:17px 15px 14px;background-size:36px 29px;}
+a.menu_box.w{background: url(../img/menu_w.png) no-repeat}
+
+.content{width: 100%;}
+
+.footer{width: 100%; margin: 20px 0; font-size: 12px; padding: 0 10px; box-sizing: border-box;}

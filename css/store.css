@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.company h2{font-size: 24px; text-align: center; margin: 15px 0; letter-spacing: 2px; font-weight: bold; background: #eee;line-height:40px;height:40px; border-bottom:2px solid #ccc;}
+.company h3{text-align:center; font-size:18px;font-weight:bold;margin-bottom:15px; color:#333;letter-spacing: 2px;}
+.company > img{width:100%; margin-bottom:20px;}
+
+.company .info{overflow:hidden;padding:5px;}
+.company .info dt{width:60px; float:left; margin-bottom:15px; font-weight:700}
+.company .info dd{clear:right;margin-left:67px; margin-bottom:15px; line-height:1.5}

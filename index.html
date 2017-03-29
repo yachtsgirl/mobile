@@ -9,6 +9,7 @@
 <title>상호명/로고명</title>
 <!-- 제이쿼리 라이브러리 -->
 <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/common.js"></script>
 <script src="js/main.js"></script>
 <script src="js/iscroll.js"></script>
 <!-- <script src="js/prefixfree.min.js"></script> -->
@@ -42,38 +43,7 @@
 
 <body>
   <div class="wrap">
-    <div class="dim"></div>
-    <div class="menu_nav">
-      <a href="#" class="menu_box w"></a>
-      <ul>
-        <li>
-          <a href="#">Canon Korea</a>
-          <ul>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Contant Us</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Photography</a>
-          <ul>
-            <li><a href="#">회사소개</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Academy</a>
-          <ul>
-            <li><a href="#">Academy News</a></li>
-            <li><a href="#">Academy Hello</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Store</a></li>
-      </ul>
-    </div>
-    <div class="header">
-      <h1 class="main_logo"><a href="#">logo</a></h1>
-      <a href="#" class="menu_box"></a>
-    </div>
+    <? include "./include/index_head.html" ?>
     <!-- header -->
     <div class="content">
       <div class="host">
@@ -93,7 +63,7 @@
         <div class="camera_banner">
           <ul>
             <li>
-              <a href="#">
+              <a href="/mobile/sub/camera.html">
                 <dl>
                   <dt><img src="img/camera01_2x.png" alt=""></dt>
                   <dd>EOS 6D</dd>
@@ -119,7 +89,7 @@
           </ul>
         </div>
         <!-- camera_banner -->
-        <span class="more">more</span>
+        <a href="/mobile/sub/camera.html"><span class="more">more</span></a>
       </div>
       <!-- camera_main -->
       <div class="acdmy_main">
@@ -159,19 +129,19 @@
         <div id="store_banner">
           <ul>
             <li>
-              <a href="#">
+              <a href="./sub/store.html">
               <img src="img/store01_2x.png" alt="">
               <p>혜화동 캐논매장</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="./sub/store.html">
               <img src="img/store02_2x.jpg" alt="">
               <p>청담동 캐논매장</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="./sub/store.html">
               <img src="img/store01_2x.png" alt="">
               <p>혜화동 캐논매장</p>
               </a>
@@ -201,12 +171,7 @@
       <!-- store_main -->
     </div>
     <!-- content -->
-    <div class="footer">
-      <p>캐논코리아컨슈머이미징(주) | 대표자 : 강동환 | 사업자등록번호 : 220-87-15734 | 통신판매업 신고번호 : 강남11387호</p>
-      <address>주소 : 서울특별시 강남구 테헤란로 607 캐논타워 5층
-      고객센터 : 1588-8133</address>
-      <p>COPYRIGHT © CANON KOREA CONSUMER IMAGING Inc. All RIGHTS RESERVED</p>
-    </div>
+    <? include "./include/index_foot.html" ?>
     <!-- footer -->
 
  </div>
